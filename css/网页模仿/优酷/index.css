@@ -1,0 +1,244 @@
+/* reset */
+body,
+div,
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+  color: #999;
+}
+a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  color: #ff3c00;
+  text-decoration: none;
+}
+
+
+/* public */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  content: '\20';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.ind9999 {
+  text-indent: -9999px;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid #888;
+  transform: rotate(0deg);
+  transform-origin: center 2px;
+  transition: transform .35s ease-in;
+}
+
+/* common */
+.sparate-line {
+  border-bottom: 1px solid #eee;
+}
+
+/* 单独样式 */
+/* 头部样式 */
+.yk-header {
+  height: 135px;
+}
+.yk-header .header-container {
+  position: fixed;
+  width: 100%;
+}
+.yk-header .header-navbar {
+  min-width: 1175px;
+  padding: 20px 10px;
+  overflow: auto;
+}
+.yk-header .yk-logo {
+  padding-left: 22px;
+  font-size: 0;
+}
+.yk-header .yk-logo a {
+  display: inline-block;
+  width: 150px;
+  height: 42px;
+  background-image: url('imgs/icon/yk-logo.png');
+  background-repeat: no-repeat;
+}
+.yk-header .yk-nav {
+  margin-left: 75px;
+}
+.yk-header .yk-nav ul {
+  height: 38px;
+  border: 1px solid #2FB3FF;
+  border-radius: 2px;
+}
+.yk-header .yk-nav li {
+  float: left;
+}
+.yk-header .yk-nav li a {
+  display: inline-block;
+  height: 38px;
+  width: 64px;
+  border-left: 1px solid #2FB3FF;
+  text-align: center;
+  line-height: 40px;
+  color: #2FB3FF;
+}
+.yk-header .yk-nav li a:hover {
+  color: #ff3c00;
+}
+.yk-header .yk-nav ul li:first-child a {
+  border-left: none;
+}
+.yk-header .yk-nav li a.current {
+  color: #fff;
+  background-color: #2FB3FF;
+}
+.user-nav {
+  margin-left: 25px;
+}
+.user-nav .user-login {
+  margin-right: 5px;
+}
+.user-nav .login, 
+.user-nav .register,
+.user-nav .user-record,
+.user-nav .user-msg,
+.user-nav .user-upload {
+  height: 40px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 42px;
+}
+.user-nav .user-record a,
+.user-nav .user-msg a,
+.user-nav .user-upload a {
+  display: inline-block;
+  height: 40px;
+  padding-right: 5px;
+  line-height: 50px;
+}
+.user-nav .user-record a .icon,
+.user-nav .user-msg a .icon,
+.user-nav .user-upload a .icon {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+}
+.user-nav .user-record a .caret,
+.user-nav .user-msg a .caret,
+.user-nav .user-upload a .caret {
+  position: relative;
+  top: -2px;
+}
+.user-nav .user-record:hover a .caret,
+.user-nav .user-upload:hover a .caret {
+  transform: rotate(180deg);
+}
+.user-nav .user-record a .icon {
+  background-image: url('./imgs/icon/header.png');
+  background-position: -97px -237px;
+}
+.user-nav .user-record:hover a .icon {
+  background-position: -117px -237px;
+}
+.user-nav .user-msg a .icon {
+  background-image: url('./imgs/icon/header.png');
+  background-position: -19px 0px;
+}
+.user-nav .user-msg:hover a .icon {
+  background-position: -118px -217px;
+}
+.user-nav .user-upload a .icon {
+  background-image: url('./imgs/icon/header.png');
+  background-position: -39px 0px;
+}
+.user-nav .user-upload:hover a .icon {
+  background-position: -97px -217px;
+}
+/* 搜索栏 */
+.yk-search {
+
+}
+.yk-search .search-block {
+  position: relative;
+}
+.yk-search .search-block input {
+  display: block;
+  width: 290px;
+  height: 22px;
+  padding: 8px 40px;
+  border: 1px solid #2FB3FF;
+  font-size: 14px;
+  color: #666;
+}
+@media screen and (max-width: 1320px) {
+  .yk-search .search-block input {
+    width: 180px;
+  }
+}
+.yk-search .search-block .so-icon,
+.yk-search .search-block .rank-icon {
+  display: inline-block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+.yk-search .search-block .so-icon {
+  top: 12px;
+  left: 12px;
+  background-image: url('./imgs/icon/header.png');
+  background-repeat: no-repeat;
+  background-position: -131px -189px;
+}
+.yk-search .search-block .rank-icon {
+  top: 11px;
+  right: 12px;
+  background-image: url('./imgs/icon/rank.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.yk-search .search-block input:focus {
+  outline: none;
+}
+.yk-search .search-bnt input {
+  display: block;
+  height: 40px;
+  padding: 13px 20px;
+  border: 0;
+  text-align: center;
+  color: #fff;
+  background: #2FB3FF;
+}
