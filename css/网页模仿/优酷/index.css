@@ -65,23 +65,26 @@ a:hover {
   transform-origin: center 2px;
   transition: transform .35s ease-in;
 }
-
-/* common */
 .sparate-line {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
 }
 
 /* 单独样式 */
+body {
+  background: #F1F2F3;
+}
 /* 头部样式 */
 .yk-header {
   height: 135px;
 }
 .yk-header .header-container {
   position: fixed;
+  z-index: 11010;
+  min-width: 1240px;
   width: 100%;
+  background: #fff;
 }
 .yk-header .header-navbar {
-  min-width: 1175px;
   padding: 20px 10px;
   overflow: auto;
 }
@@ -241,4 +244,54 @@ a:hover {
   text-align: center;
   color: #fff;
   background: #2FB3FF;
+}
+.sub-navbar {
+  height: 51px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.sub-navbar .left-part {
+  position: relative;
+  top: 1px;
+}
+.sub-navbar ul li {
+  float: left;
+}
+.sub-navbar ul li a {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 15px 6px;
+  font-size: 14px;
+}
+.sub-navbar ul li.current a {
+  border-bottom: 2px solid  #2FB3FF;
+  color: #2FB3FF;
+}
+.sub-navbar ul li.more a {
+  padding-right: 0;
+}
+.sub-navbar ul li.more a {
+  color: #555;
+  cursor: text;
+}
+.sub-navbar ul li.more .caret {
+  position: relative;
+  top: 3px;
+  left: -1px;
+  cursor: text;
+}
+.sub-navbar ul li.more:hover .caret {
+  transform: rotate(180deg);
+}
+.sub-navbar .right-part {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 15px 6px;
+  font-size: 14px;
+}
+
+/* 主要内容 */
+.yk-body {
+
 }
