@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>简单记事留言本</title>
+</head>
+<body onload="loadStorage('msg')">
+  <h1>简单记事留言本</h1>
+  <textarea id="demo" clos="60" rows="10"></textarea>
+  <br>
+  <input type="button" value="追加" onclick="saveStorage('demo')">
+  <input type="button" value="初始化" onclick="clearStorage('msg')">
+  <hr>
+  <p id="msg"></p>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
