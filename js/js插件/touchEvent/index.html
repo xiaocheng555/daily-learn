@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>wheel</title>
+  <style type="text/css">
+    html {
+      border: 1px solid red;
+      overflow: scroll;
+    }
+    body {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+  </div>
+  <div class="back-top">
+    滚回顶部
+  </div>
+  <script type="text/javascript">
+
+    // window.onmousewheel = (e) => {
+    //   console.log(e)
+    // }
+    document.body.addEventListener('touchstart', function (e) {
+      console.log(e.touches[0].pageX, e)
+    }, false)
+    document.body.addEventListener('touchmove', function (e) {
+      console.log(e.changedTouches[0].pageX, e)
+    }, false)
+    document.body.addEventListener('touchend', function (e) {
+      console.log(e.changedTouches[0].pageX, e)
+    }, false)
+
+    document.getElementsByClassName('back-top')[0].onclick = () => {
+      console.log(document.documentElement.scrollTop)
+      document.documentElement.scrollTop = 0
+      // document.body.scrollTop = 0
+    }
+
+    var $html = document.documentElement
+    var $body = document.body
+    console.log(window.getComputedStyle($html, null).width)
+    console.log(window.getComputedStyle($html, null).height)
+    console.log(window.getComputedStyle(document.getElementsByClassName('back-top')[0], null).height)
+    console.log(document.getElementsByClassName('back-top')[0].scrollTop)
+    console.log($html.scrollLeft)
+
+  </script>
+</body>
+</html>

@@ -44,11 +44,11 @@ a:hover {
 .fr {
   float: right;
 }
-.clear {
+.clear:after {
   content: '\20';
   display: block;
-  clear: both;
   height: 0;
+  clear: both;
 }
 .ind9999 {
   text-indent: -9999px;
@@ -103,7 +103,6 @@ body {
   margin-left: 75px;
 }
 .yk-header .yk-nav ul {
-  height: 38px;
   border: 1px solid #2FB3FF;
   border-radius: 2px;
 }
@@ -112,11 +111,10 @@ body {
 }
 .yk-header .yk-nav li a {
   display: inline-block;
-  height: 38px;
   width: 64px;
   border-left: 1px solid #2FB3FF;
   text-align: center;
-  line-height: 40px;
+  line-height: 38px;
   color: #2FB3FF;
 }
 .yk-header .yk-nav li a:hover {
@@ -200,7 +198,7 @@ body {
 }
 .yk-search .search-block input {
   display: block;
-  width: 290px;
+  width: 280px;
   height: 22px;
   padding: 8px 40px;
   border: 1px solid #2FB3FF;
@@ -239,14 +237,13 @@ body {
 .yk-search .search-bnt input {
   display: block;
   height: 40px;
-  padding: 13px 20px;
+  padding: 13px 25px;
   border: 0;
   text-align: center;
   color: #fff;
   background: #2FB3FF;
 }
 .sub-navbar {
-  height: 51px;
   padding-left: 16px;
   padding-right: 16px;
 }
